@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+rye tools list | xargs -I {} sh -c 'rye tools uninstall {} && rye tools install {}'
